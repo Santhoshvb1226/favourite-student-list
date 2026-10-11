@@ -1,0 +1,237 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.navbar {
+  background: #172554;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #93c5fd;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  min-height: 65vh;
+}
+
+.page h1 {
+  text-align: center;
+  color: #172554;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(230px, 1fr)
+  );
+  gap: 22px;
+}
+
+
+.student-card {
+.student-card {
+  background: linear-gradient(135deg, #dcfce7, #a7f3d0);
+  border: 2px solid #34d399;
+  padding: 28px 18px;
+  text-align: center;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.student-card:hover { transform: translateY(-8px); }
+  padding: 28px 18px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #c4b5fd;
+  box-shadow: 0 8px 24px rgba(109, 40, 217, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 32px rgba(109, 40, 217, 0.22);
+  border-color: #8b5cf6;
+}
+
+.student-card h2 {
+  color: #5b21b6;
+  font-size: 21px;
+}
+
+.student-card p {
+  color: #475569;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled,
+button.added {
+  background: #1dc22b;
+  cursor: default;
+}
+
+button.remove-button {
+  background: #dc2626;
+}
+
+button.remove-button:hover {
+  background: #b91c1c;
+}
+
+.empty-message {
+  text-align: center;
+  background: white;
+  border-radius: 14px;
+  padding: 45px 20px;
+  margin: 35px auto;
+  box-shadow: 0 4px 14px #00000010;
+}
+
+.empty-message p {
+  color: #64748b;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  background: #172554;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .page {
+    margin-top: 25px;
+  }
+}
+
+
+.student-card button {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.student-card button:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+
+.student-card button.added {
+  background: linear-gradient(90deg, #059669, #10b981);
+}
+
+.student-card button.remove-button {
+  background: linear-gradient(90deg, #e11d48, #f43f5e);
+}
+
+.empty-message {
+  border: 2px dashed #a78bfa;
+  background: linear-gradient(135deg, #ffffff, #f3e8ff);
+  border-radius: 18px;
+}
+
+.page h1 {
+  text-align: center;
+  color: #4c1d95;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(90deg, #312e81, #6d28d9);
+  color: white;
+  margin-top: 30px;
+}
